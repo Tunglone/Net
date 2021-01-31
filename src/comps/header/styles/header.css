@@ -1,0 +1,43 @@
+.Button_Link {
+    display: block;
+    background-color: #e50914;
+    width: 110px;
+    height: fit-content;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 8px 17px;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.Button_Link:hover {
+    background-color: #f40612;
+    color: #fff;
+}
+
+
+.Header_Background {
+    display: flex;
+    flex-direction: column;
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/7181d537-0325-4c66-aa5a-9bdc7ee0176c/e18ca51e-4a27-44e7-a793-2e2b00cbb657/VN-en-20210111-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+    width: 100%;
+    height: 680px;
+}
+
+.Header_Title {
+    text-align: center;
+}
+
+
+
+.Header_Login_Button {
+    color: white;
+    text-decoration: none
+}
+
+.Header_Login_Button:hover {
+    text-decoration: underline
+}

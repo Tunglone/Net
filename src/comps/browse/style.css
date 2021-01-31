@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px;
+    z-index: 100;
+}
+
+header .Browse_Logo img {
+    margin-top: 5px;
+    max-width: 150px;
+}
+
+.Browse_Navigation {
+    display: flex;
+    margin-top: 15px;
+}
+
+.Browse_Navigation li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.Browse_Navigation li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.Browse_Navigation li :hover a {
+    color: #de0611;
+}
+
+.Browse_Search {
+    margin-top: 7px;
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.Browse_Search input {
+    margin-top: -6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 2555, 0.5);
+    outline: none;
+    border-radius: 4px;
+    padding: 0 10px 0 45px;
+    backdrop-filter: blur(10px);
+}
+
+.Browse_Search input::placeholder {
+    color:gray;
+}
+
+.Browse_Search .fa-search {
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding-right: 10px;
+    color: white;
+    border-right: 1px solid white;
+}
+
+.Browse_Banner {
+    background-image: url(https://lh3.googleusercontent.com/eWxkVejegpqIeAFJazWlLu7WWrgzwyQTwXG3Z1s2RTcphNjo7Hd0sqYwLkkby1xrqJ66i7pAkQyd8J2TgtKDplgEHp2GVyGCwh3pySf0pmHPtxDaXodW8Vq9SvlGVjiKoe27A7Tjk8RTg8qHtO2UZV0FY6Lf4AQ7D1mDwxDNSfe6scLnZC7vcpL8lQr6Y-9C4PY0ayLL73SLPX3r9Y4sYQJUMdovO_UNTos0tnmFJt2dSGUeDSGPTnGnp1VGggaXulQDqbhc3pShS0oJFUx1i7dVvrUt6vQB5hAunSsSiks1bAODeiBWXt1s39MgnGBrCy_WgG2kQYf6EW_GkyACrVWrcRXmVHSe4ss04sQAr9liRNN08zUD2w5AYkRUSkRtDi15EMahwLkfryML4IKNLEf0qy5yJFc3rbNHbbsozzkZylqGV5kHQZuNc-5nT3yF2nUOg5SSEHV46bSRex1qyp7W9ON8rB0lrDbMuGCCFFw_e9xO54_PlzgPk7cRLVQmSo_6xbY_AsjBdqhow00ovCARpebbRRG2I_ha7nJRHjfcwdXVD4OQNqildhujfBK_9dJyVrSAHDpK6Aaq4vCMa8ih_Pwf6Bslp6Dxi8vUl9ElQdPakSvlAaJcvUF5SvXk8tkY6rfIADCojsieX_omn3EhN5cTVSj0PX0KarjbHSFLZFNH9Wo2xJFsEgc5ng=w986-h657-no?authuser=0);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Browse_Banner .Browse_Background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Browse_Content {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+.Browse_Content_Title {
+    max-width: 400px;
+    margin-bottom: 25px;
+}
+
+.Browse_Banner .Browse_Content h4 {
+    color: rgba(255, 255, 2555, 0.5);
+    font-weight: 500;
+}
+
+.Browse_Banner .Browse_Content h4 span {
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 2555, 0.5);
+}
+
+.Browse_Banner .Browse_Content h4 span:first-child {
+    padding-left: 0;
+}
+
+.Browse_Banner .Browse_Content h4 span:last-child {
+    border-right: none;
+}
+
+.Browse_Banner .Browse_Content h4 span i {
+    background-color: #de0611;
+    color: #fff;
+    padding: 0 8px;
+    display: inline-block;
+    font-style: normal;
+    border-radius: 2px;
+}
+
+.Browse_Banner .Browse_Content p {
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #fff;
+    margin: 10px 0 20px
+}
+
+.Browse_Banner .Browse_Content .Play_Button {
+    position: relative;
+}
+
+.Browse_Banner .Browse_Content .Play_Button a {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background: #de0611;
+    color: #fff;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.Browse_Banner .Browse_Content .Play_Button a:nth-child(2) {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 2555, 0.5);
+}
+
+.Browse_Banner .Browse_Content .Play_Button a:hover:nth-child(2) {
+    background: #de0611;
+}
+
+.Play_Btn {
+    position: absolute;
+    background: none;
+    border: none;
+    bottom: 50px;
+    left: 100px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.Play_Btn img {
+    margin-right: 10px;
+    max-width: 50px;
+    
+}
+ 
+.Trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+
+.Trailer video {
+    max-width: 900px;
+    outline: none;
+}
+
+.Close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+
+    .Browse_Navigation {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px 0;
+    }
+
+    .Browse_Banner {
+        padding: 100px 50px;
+    }
+
+    .Browse_Banner .Play_Btn {
+        left: 50px;
+        font-size: 1em;
+    }
+
+    .Play_Btn img {
+        margin-right: 10px;
+        max-width: 40px;
+    }
+
+    .Trailer video {
+        max-width: 90%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+    .Browse_Search {
+        position: relative;
+        width: calc(100% - 20px);
+        height: 40px;
+    }
+    .Browse_Banner {
+        padding: 220px 20px 120px;
+    }
+
+    .Browse_Banner .Play_Btn {
+        left: 20px;
+        font-size: 1em;
+        bottom: 30px;
+    }
+}
+
+.Browse_Card_Container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 200px;
+    background-color: #de0611;
+}
+
+.Browse_Card_Group {
+    
+}
+
+.Lol {
+    background-color: #de0611;
+    color: #fff;
+    padding: 0 8px;
+    display: inline-block;
+    font-style: normal;
+    border-radius: 2px;
+}
+
+.Browse_Link {
+    text-shadow: 1px 1px #000;
+    border: none;
+    color: white;
+    background: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Top {
+    height: 40px;
+    background-color: black;
+    position: fixed;
+}
